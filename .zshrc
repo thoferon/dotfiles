@@ -37,7 +37,12 @@ plugins=(git tmux ruby gem brew osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/thoferon/.cabal/bin:/usr/local/share/npm/bin:/usr/local/share/python:/usr/local/Cellar/vim/7.3.684/bin:/Users/thoferon/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/share/npm/bin:/usr/local/share/python:/usr/local/Cellar/vim/7.3.684/bin:/Users/thoferon/.rbenv/shims
+export PATH=$HOME/.cabal/bin:/usr/local/share/npm/bin:/usr/local/share/python:/usr/local/Cellar/vim/7.3.684/bin:$HOME/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/share/npm/bin
 
+alias be="bundle exec"
+alias hb="hub browse"
 alias ds=darcs
+
 export DARCS_DO_COLOR_LINES=1
+
+unsetopt correct_all
