@@ -26,4 +26,4 @@ set wildignore+=*.o,*.hi
 let g:slime_target = "tmux"
 autocmd FileType haskell let b:dispatch = 'cabal-dev configure --enable-tests && cabal-dev build && dist/build/unit/unit'
 autocmd FileType ruby let b:dispatch = 'be rspec %'
-nmap <C-+> :Dispatch<CR>
+nmap <C-@> :Dispatch<CR>
