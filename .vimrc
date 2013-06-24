@@ -23,6 +23,9 @@ set cursorline
 
 set wildignore+=*.o,*.hi
 
+set backspace=indent,eol,start
+set incsearch
+
 let g:slime_target = "tmux"
 autocmd FileType haskell let b:dispatch = 'cabal-dev configure --enable-tests && cabal-dev build && dist/build/unit/unit'
 autocmd FileType ruby let b:dispatch = 'be rspec %'
