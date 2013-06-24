@@ -1,0 +1,13 @@
+:set prompt "\ESC[41m>>>>\ESC[m "
+:set -XOverloadedStrings
+:m +Data.Monoid
+:m +Data.Maybe
+:m +Control.Monad
+:m +Control.Applicative
+import qualified Data.List as L
+import qualified Data.Text as T
+import qualified Data.Text.Lazy as TL
+import qualified Data.Text.IO as TIO
+import qualified Data.Text.Lazy.IO as TLIO
+import qualified Data.ByteString as BS
+import qualified Data.ByteString.Lazy as BSL
